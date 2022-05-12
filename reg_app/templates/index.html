@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+</head>
+<body>
+    <form METHOD="post" action="/registration">
+        {% csrf_token %}
+        Username{{ reg_form.username }}
+        Email{{ reg_form.email }}
+        Password{{ reg_form.password }}
+        <input type="submit" value="Зарегистрироваться">
+    </form>
+</body>
+</html>
+
+
